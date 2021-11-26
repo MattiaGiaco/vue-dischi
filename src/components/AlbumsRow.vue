@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex flex-wrap">
     <Album 
      v-for="(album,index) in albumArray"
      :key="index"
@@ -44,8 +44,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  div{
-    display: flex;
-    flex-wrap: wrap;
-  }
+  
 </style>
