@@ -2,7 +2,7 @@
   <div class="main-wrapper">
     <header class="d-flex justify-content-between">
       <img class="my-1 mx-3" src="./assets/img/spotify-logo.png" alt="">
-      <SearchBar />
+      <SearchBar @sendValue="performValue" />
     </header>
 
     <div class="container mt-5">
@@ -21,6 +21,17 @@ export default {
   components: {
     AlbumsRow,
     SearchBar
+  },
+  data(){
+    return{
+      
+    }
+  },
+  methods:{
+    performValue(value){
+      this.genreToSearch = value;
+      console.log(this.genreToSearch);
+    }
   }
 }
 </script>
