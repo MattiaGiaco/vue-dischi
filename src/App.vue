@@ -1,7 +1,8 @@
 <template>
   <div class="main-wrapper">
-    <header>
+    <header class="d-flex justify-content-between">
       <img class="my-1 mx-3" src="./assets/img/spotify-logo.png" alt="">
+      <SearchBar />
     </header>
 
     <div class="container mt-5">
@@ -13,11 +14,13 @@
 <script>
 
 import AlbumsRow from './components/AlbumsRow.vue';
+import SearchBar from './components/SearchBar.vue';
 
 export default {
   name: 'App',
   components: {
-    AlbumsRow
+    AlbumsRow,
+    SearchBar
   }
 }
 </script>
